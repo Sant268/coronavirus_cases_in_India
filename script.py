@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-URL = "https://www.mohfw.gov.in/"
+URL = "https://www.mohfw.gov.in/"  #Indian Gov Website
 page = requests.get(URL)
 soup = BeautifulSoup(page.content, 'html.parser')
 result = soup.find_all(class_="icount")
